@@ -1,0 +1,34 @@
+.main-footer {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#e8ebed, #a9abad);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 148px;
+    .f1-logo {
+        height: 20px;
+        width: 65px;
+        background-image: url(../../../images/f1-footer.png);
+        background-repeat: no-repeat;
+        margin-left: 108px;
+    }
+    .kutia-logo {
+        height: 30px;
+        width: 135px;
+        background-image: url(../../../images/kutia-footer.png);
+        background-repeat: no-repeat;
+        margin-right: 183px;
+    }
+}
+
+@media all and (max-width: 975px) {
+    .main-footer {
+        .f1-logo {
+            margin-left: 20px;
+        }
+        .kutia-logo {
+            margin-right: 25px;
+        }
+    }
+}

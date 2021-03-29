@@ -1,0 +1,201 @@
+.home-container {
+    * {
+        box-sizing: border-box;
+    }
+    width: 100%;
+    height: 768px;
+    background-color: #edf0f2;
+    .champion-wrapper {
+        padding-top: 101px;
+        margin: 0 0 0 78px;
+
+        .champion-section {
+            max-width: 874px;
+            height: 214px;
+            opacity: 0.75;
+            background-color: #fafbfc;
+            border-radius: 30px;
+            padding: 0 31px;
+            margin-bottom: 58px;
+
+            .champion-section__year {
+                font-size: 0.875rem;
+                color: #000;
+                height: 51px;
+                font-weight: bold;
+                width: 67px;
+                margin: 0;
+                padding: 34px 0 0 0;
+            }
+            .champion-section__name {
+                width: 122px;
+                height: 29px;
+                margin: 0;
+                padding: 5px 0 0 0;
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: #e6101a;
+            }
+            .champion-section__table {
+                display: flex;
+                align-items: center;
+
+                table {
+                    margin-top: 42px;
+                    width: 100%;
+                    border-collapse: collapse;
+                    th:nth-of-type(1) {
+                        width: 221px;
+                    }
+                    th:nth-of-type(2) {
+                        width: 174px;
+                    }
+                    th:nth-of-type(3) {
+                        width: 155px;
+                    }
+                    th {
+                        text-align: left;
+                        font-size: 0.625rem;
+                        border-bottom: 2px solid #d0d4d7;
+                        color: #89959b;
+                        padding: 0 0 16px 0;
+                    }
+                    td {
+                        font-size: 0.75rem;
+                        color: black;
+                        font-weight: bold;
+                        padding-top: 14px;
+                    }
+                }
+            }
+            .champion-section__details {
+                margin-top: 37px;
+                width: 128px;
+                height: 44px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    min-width: 45px;
+                    height: 100%;
+                    border: 2px solid #d0d4d7;
+                    border-radius: 25px;
+                    color: #e6101a;
+                    font-size: 0.625rem;
+                    text-decoration: none;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        background: url("../../images/right.png");
+                        background-size: 18px 19px;
+                        background-repeat: no-repeat;
+                        width: 18px;
+                        height: 19px;
+                        margin-left: 12px;
+                    }
+                    &:hover {
+                        border: 3px solid #d0d4d7;
+                    }
+                }
+            }
+        }
+
+        .winner-section {
+            max-width: 874px;
+            height: 214px;
+            opacity: 0.75;
+            border-radius: 30px;
+            padding: 0 31px;
+
+            .winner-section__name {
+                width: 122px;
+                height: 29px;
+                margin: 0;
+                font-size: 1.25rem;
+                color: #e6101a;
+            }
+            .winner-section__table {
+                display: flex;
+                align-items: center;
+
+                table {
+                    margin-top: 14px;
+                    width: 100%;
+                    border-collapse: collapse;
+                    th:nth-of-type(1) {
+                        width: 221px;
+                    }
+                    th:nth-of-type(2) {
+                        width: 174px;
+                    }
+                    th:nth-of-type(3) {
+                        width: 155px;
+                    }
+                    th:nth-of-type(4) {
+                        width: 167px;
+                    }
+                    th {
+                        text-align: left;
+                        font-size: 0.625rem;
+                        border-bottom: 2px solid #d0d4d7;
+                        color: #89959b;
+                        padding: 0 0 16px 0;
+                    }
+                    td {
+                        font-size: 0.75rem;
+                        color: black;
+                        font-weight: bold;
+                        padding-top: 13px;
+                        padding-bottom: 11px;
+                    }
+                    td:nth-of-type(5) {
+                        padding: 0;
+                    }
+                }
+            }
+            .winner-section__details {
+                width: 96px;
+                height: 28px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    min-width: 45px;
+                    height: 100%;
+                    border: 2px solid #d0d4d7;
+                    border-radius: 25px;
+                    color: #e6101a;
+                    font-size: 0.625rem;
+                    text-decoration: none;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        background: url("../../images/right.png");
+                        background-size: 18px 19px;
+                        background-repeat: no-repeat;
+                        width: 18px;
+                        height: 19px;
+                        margin-left: 12px;
+                    }
+                    &:hover {
+                        border: 3px solid #d0d4d7;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-footer {
+        margin-top: 75px;
+    }
+}
+
+@media all and (max-width: 975px) {
+    .home-container {
+        .champion-wrapper {
+            margin: 0;
+        }
+    }
+}
